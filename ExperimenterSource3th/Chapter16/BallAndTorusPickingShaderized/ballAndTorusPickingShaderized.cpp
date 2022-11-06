@@ -31,8 +31,8 @@ using namespace glm;
 
 #define HIGHLIGHT_COLORS 1.0, 0.0, 0.0, 1.0 // Colors to highlight picked object.
 
-static enum object {SPHERE, TORUS, NONE}; // VAO ids and NONE = 2.
-static enum buffer {SPH_VERTICES, SPH_INDICES, TOR_VERTICES, TOR_INDICES, SHADER_STORAGE}; // VBO ids.
+enum object {SPHERE, TORUS, NONE}; // VAO ids and NONE = 2.
+enum buffer {SPH_VERTICES, SPH_INDICES, TOR_VERTICES, TOR_INDICES, SHADER_STORAGE}; // VBO ids.
 
 // Globals.
 static float latAngle = 0.0; // Latitudinal angle.

@@ -33,8 +33,8 @@
 
 using namespace glm;
 
-static enum object {FIELD, SKY, LINE}; /// VAO ids.
-static enum buffer {FIELD_VERTICES, SKY_VERTICES, LINE_VERTICES}; // VBO ids.
+enum object {FIELD, SKY, LINE}; /// VAO ids.
+enum buffer {FIELD_VERTICES, SKY_VERTICES, LINE_VERTICES}; // VBO ids.
 
 // Globals.
 // Light properties.

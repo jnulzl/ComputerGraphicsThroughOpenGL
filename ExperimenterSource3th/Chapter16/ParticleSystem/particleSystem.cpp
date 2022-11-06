@@ -27,9 +27,9 @@
 
 using namespace glm;
 
-static enum object {PARTICLES_A, PARTICLES_B, SQUARE}; // VAO ids.
-static enum bufferAndTransformFeedbackIds {TRANSFORM_FEEDBACK_A, TRANSFORM_FEEDBACK_B, SQUARE_VERTICES}; // VBO ids.
-static enum programObjectIds {PARTICLE_PROG, SQUARE_PROG};
+enum object {PARTICLES_A, PARTICLES_B, SQUARE}; // VAO ids.
+enum bufferAndTransformFeedbackIds {TRANSFORM_FEEDBACK_A, TRANSFORM_FEEDBACK_B, SQUARE_VERTICES}; // VBO ids.
+enum programObjectIds {PARTICLE_PROG, SQUARE_PROG};
 
 // Globals.
 static mat4 modelViewMat, projMat;

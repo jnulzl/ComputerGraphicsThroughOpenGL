@@ -27,8 +27,8 @@
 
 using namespace glm;
 
-static enum object {INPUT_SET}; // VAO ids.
-static enum buffer {INPUT_SET_VERTICES}; // VBO ids.
+enum object {INPUT_SET}; // VAO ids.
+enum buffer {INPUT_SET_VERTICES}; // VBO ids.
 
 // Globals.
 static Vertex inputVertices[3] = 

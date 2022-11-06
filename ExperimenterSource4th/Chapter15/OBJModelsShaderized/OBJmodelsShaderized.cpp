@@ -22,8 +22,8 @@
 
 using namespace glm;
 
-static enum object { HIPPO, CAMEL }; // VAO ids.
-static enum buffer { HIPPO_VERTICES, HIPPO_INDICES, CAMEL_VERTICES, CAMEL_INDICES }; // VBO ids.
+enum object { HIPPO, CAMEL }; // VAO ids.
+enum buffer { HIPPO_VERTICES, HIPPO_INDICES, CAMEL_VERTICES, CAMEL_INDICES }; // VBO ids.
 
 // Hippo mesh data variables.
 static Vertex hippoVertices[MAX_NO_VERTICES]; // Vertex x/y/z coordinates.

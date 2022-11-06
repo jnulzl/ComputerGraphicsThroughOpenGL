@@ -370,7 +370,7 @@ void drawScene(void)
    glEndQuery(GL_TIME_ELAPSED);
    while (!resultAvailable[0])
 	  glGetQueryObjectuiv(query[0], GL_QUERY_RESULT_AVAILABLE, &resultAvailable[0]);
-   glGetQueryObjectui64v(query[0], GL_QUERY_RESULT, &timeLeftViewport);
+   glGetQueryObjectui64v(query[0], GL_QUERY_RESULT, reinterpret_cast<GLuint64 *>(&timeLeftViewport));
 
    // Draw spacecraft.
    glPushMatrix();
@@ -443,7 +443,7 @@ void drawScene(void)
    glEndQuery(GL_TIME_ELAPSED);
    while (!resultAvailable[1])
       glGetQueryObjectuiv(query[1], GL_QUERY_RESULT_AVAILABLE, &resultAvailable[1]);
-   glGetQueryObjectui64v(query[1], GL_QUERY_RESULT, &timeRightViewport);
+   glGetQueryObjectui64v(query[1], GL_QUERY_RESULT, reinterpret_cast<GLuint64 *>(&timeRightViewport));
    // End right viewport.
 
    // Output total time drawing asteroids in msecs.

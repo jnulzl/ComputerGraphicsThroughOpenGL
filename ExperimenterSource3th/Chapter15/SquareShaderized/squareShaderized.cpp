@@ -33,8 +33,8 @@ static const Matrix4x4 IDENTITY_MATRIX4x4 =
 	}
 };
 
-static enum buffer { SQUARE_VERTICES };
-static enum object { SQUARE };
+enum buffer { SQUARE_VERTICES };
+enum object { SQUARE };
 
 // Globals
 static Vertex squareVertices[] =

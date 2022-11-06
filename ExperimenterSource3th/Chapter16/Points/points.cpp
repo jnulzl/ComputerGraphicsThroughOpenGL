@@ -29,8 +29,8 @@
 
 using namespace glm;
 
-static enum buffer {POINTSET_VERTICES}; // VAO ids.
-static enum object {POINTSET}; // VBO ids.
+enum buffer {POINTSET_VERTICES}; // VAO ids.
+enum object {POINTSET}; // VBO ids.
 
 // Globals
 static Vertex pointSetVertices[] =  

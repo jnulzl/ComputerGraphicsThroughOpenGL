@@ -33,8 +33,8 @@
 
 using namespace glm;
 
-static enum object {PLANE}; // VAO ids.
-static enum buffer {PLANE_VERTICES, PLANE_INDICES}; // VBO ids.
+enum object {PLANE}; // VAO ids.
+enum buffer {PLANE_VERTICES, PLANE_INDICES}; // VBO ids.
 
 // Globals.
 // Light properties.

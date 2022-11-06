@@ -20,7 +20,11 @@
 // Globals.
 static int isReflected = 0; // Is there reflection?
 static char theStringBuffer[10]; // String buffer.
+#if defined(WIN32) || defined(_MSC_VER)
 static int font = (int)GLUT_BITMAP_8_BY_13; // Font selection.
+#else
+static long font = (long)GLUT_BITMAP_8_BY_13; // Font selection.
+#endif
 
 // Routine to draw a bitmap character string.
 void writeBitmapString(void *font, char *string)

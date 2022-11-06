@@ -6,7 +6,7 @@ set(CMAKE_VERBOSE_MAKEFILE ON)
 if(NOT book_version_num)
     set(book_version_num 4) # 3 or 4
 endif()
-set(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin/${book_version_num}th)
+set(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin/${CMAKE_SYSTEM_NAME}/${book_version_num}th)
 
 include(cmake/utils.cmake)
 

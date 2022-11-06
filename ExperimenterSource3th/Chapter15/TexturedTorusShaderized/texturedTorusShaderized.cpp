@@ -28,8 +28,8 @@
 
 using namespace glm;
 
-static enum object { TORUS }; // VAO ids.
-static enum buffer { TOR_VERTICES, TOR_INDICES }; // VBO ids.
+enum object { TORUS }; // VAO ids.
+enum buffer { TOR_VERTICES, TOR_INDICES }; // VBO ids.
 
 // Globals.
 static float Xangle = 0.0, Yangle = 0.0, Zangle = 0.0; // Angles to rotate torus.

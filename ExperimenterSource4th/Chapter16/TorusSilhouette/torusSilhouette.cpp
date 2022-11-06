@@ -27,8 +27,8 @@
 
 using namespace glm;
 
-static enum object { TORUS }; // VAO id values.
-static enum buffer { TOR_VERTICES, TOR_INDICES }; // VAO id values.
+enum object { TORUS }; // VAO id values.
+enum buffer { TOR_VERTICES, TOR_INDICES }; // VAO id values.
 
 // Globals.
 static float Xangle = 0.0, Yangle = 0.0, Zangle = 0.0; // Angles to rotate scene.

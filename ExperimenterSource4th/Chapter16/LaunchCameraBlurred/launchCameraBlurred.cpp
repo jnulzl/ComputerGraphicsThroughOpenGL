@@ -29,8 +29,8 @@
 
 using namespace glm;
 
-static enum object {LAUNCH}; // VAO ids.
-static enum buffer {LAUNCH_VERTICES}; // VBO ids.
+enum object {LAUNCH}; // VAO ids.
+enum buffer {LAUNCH_VERTICES}; // VBO ids.
 
 // Globals.
 static Vertex launchVertices[4] =  

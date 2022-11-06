@@ -23,8 +23,8 @@
 
 using namespace glm;
 
-static enum object {HELIX}; // VAO ids.
-static enum buffer {HEL_VERTICES, HEL_COLORS, HEL_TRANSFORM_MATS}; // VBO ids.
+enum object {HELIX}; // VAO ids.
+enum buffer {HEL_VERTICES, HEL_COLORS, HEL_TRANSFORM_MATS}; // VBO ids.
 
 // Globals.
 // Helix data.

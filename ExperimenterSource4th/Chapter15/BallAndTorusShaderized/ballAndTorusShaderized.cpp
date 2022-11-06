@@ -28,8 +28,8 @@
 
 using namespace glm;
 
-static enum object {SPHERE, TORUS}; // VAO ids.
-static enum buffer {SPH_VERTICES, SPH_INDICES, TOR_VERTICES, TOR_INDICES}; // VBO ids.
+enum object {SPHERE, TORUS}; // VAO ids.
+enum buffer {SPH_VERTICES, SPH_INDICES, TOR_VERTICES, TOR_INDICES}; // VBO ids.
 
 // Begin globals.
 static float latAngle = 0.0; // Latitudinal angle.

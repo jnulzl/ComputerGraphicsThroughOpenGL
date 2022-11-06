@@ -30,8 +30,8 @@
 
 using namespace glm;
 
-static enum object {FIELD, SKY}; // VAO ids.
-static enum buffer {FIELD_VERTICES, SKY_VERTICES}; // VBO ids.
+enum object {FIELD, SKY}; // VAO ids.
+enum buffer {FIELD_VERTICES, SKY_VERTICES}; // VBO ids.
 
 // Globals.
 static Vertex fieldVertices[] =  

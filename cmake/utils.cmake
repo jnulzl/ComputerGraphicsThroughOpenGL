@@ -30,7 +30,7 @@ function(opengl_add_executable src)
 
             set(exe_suffix "exe")
         elseif (CMAKE_SYSTEM_NAME STREQUAL "Linux")
-            target_link_libraries(${exe_name} PRIVATE glut GLEW GL GLU OpenGL)
+            target_link_libraries(${exe_name} PRIVATE glut GLEW GL GLU glfw OpenGL)
             set(exe_suffix "bin")
         endif ()
         message(STATUS "Add executable : "  ${EXECUTABLE_OUTPUT_PATH}/${exe_name}.${exe_suffix})

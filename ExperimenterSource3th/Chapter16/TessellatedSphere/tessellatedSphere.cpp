@@ -31,7 +31,7 @@ using namespace glm;
 
 #define SPH_RADIUS 25.0 // Sphere radius.
 
-static enum object {SPHERE};          
+enum object {SPHERE};          
 
 // Globals.
 static int isWire = 0; // Is wireframe?

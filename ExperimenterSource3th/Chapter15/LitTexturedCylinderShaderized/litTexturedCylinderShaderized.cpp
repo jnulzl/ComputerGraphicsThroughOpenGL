@@ -34,8 +34,8 @@
 
 using namespace glm;
 
-static enum object {CYLINDER, DISC}; // VAO ids.
-static enum buffer {CYL_VERTICES, CYL_INDICES, DISC_VERTICES}; // VBO ids.
+enum object {CYLINDER, DISC}; // VAO ids.
+enum buffer {CYL_VERTICES, CYL_INDICES, DISC_VERTICES}; // VBO ids.
 
 // Globals.
 static float Xangle = 210.0, Yangle = 230.0, Zangle = 0.0; // Angles to rotate the cylinder.
