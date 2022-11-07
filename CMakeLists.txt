@@ -10,7 +10,12 @@ set(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin/${CMAKE_SYSTEM_NAME}/${book
 
 include(cmake/utils.cmake)
 
-file(GLOB_RECURSE SLN_FILES ${PROJECT_SOURCE_DIR}/ExperimenterSource${book_version_num}th/*.sln)
+#file(GLOB_RECURSE SLN_FILES ${PROJECT_SOURCE_DIR}/ExperimenterSource${book_version_num}th/*.sln)
+#foreach(sln ${SLN_FILES})
+#    opengl_add_executable(${sln})
+#endforeach()
+
+file(GLOB_RECURSE SLN_FILES ${PROJECT_SOURCE_DIR}/LearnOpenGL/*.sln)
 foreach(sln ${SLN_FILES})
     opengl_add_executable(${sln})
 endforeach()

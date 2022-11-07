@@ -19,6 +19,7 @@ function(opengl_add_executable src)
                     ${third_party_root}/freeglut/include
                     ${third_party_root}/glew-2.1.0/include
                     ${third_party_root}/glfw-3.3.2/include
+                    ${third_party_root}/glad/include
                     ${third_party_root}/glm)
 
             target_link_directories(${exe_name} PRIVATE
@@ -32,8 +33,8 @@ function(opengl_add_executable src)
         elseif (CMAKE_SYSTEM_NAME STREQUAL "Linux")
             target_link_libraries(${exe_name} PRIVATE glut GLEW GL GLU glfw OpenGL)
             set(exe_suffix "bin")
+            set_target_properties(${exe_name} PROPERTIES OUTPUT_NAME ${exe_name}.${exe_suffix})
         endif ()
-        set_target_properties(${exe_name} PROPERTIES OUTPUT_NAME ${exe_name}.${exe_suffix})
         message(STATUS "Add executable : "  ${EXECUTABLE_OUTPUT_PATH}/${exe_name}.${exe_suffix})
     endif()
 endfunction()
